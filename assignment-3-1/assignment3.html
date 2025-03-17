@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Susmoy Nath">
+    <meta http-equiv="refresh" content="5">
+    <meta name="description" content="A comprehensive HTML practical task demonstration.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Practical Tasks</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; }
+        hr { border: 2px solid red; }
+        blockquote { margin: 20px; padding: 10px; background: #f9f9f9; border-left: 5px solid #ccc; }
+        .nav-bar { text-align: center; }
+        .nav-bar ul { list-style-type: none; padding: 0; }
+        .nav-bar ul li { display: inline; margin: 0 15px; }
+        footer { text-align: center; padding: 10px; background: #f1f1f1; margin-top: 20px; }
+        .code-block { background: #eee; padding: 10px; border-radius: 5px; font-family: monospace; }
+    </style>
+</head>
+<body>
+    
+    <h1>Task 1: Tag Structure and Nesting</h1>
+    <h2>This is a heading with <em>emphasis</em> and <strong>strong emphasis</strong>.</h2>
+    <p>This is a paragraph with <mark>highlighted text</mark>, a <code>code snippet</code>, and an abbreviation: <abbr title="HyperText Markup Language">HTML</abbr>. It also includes <strike>deleted text</strike> and a <span style="color: blue;">styled span</span>.</p>
+    
+    <h1>Task 2: Non-Breaking Spaces and Preserve Formatting</h1>
+    <p>This is a sentence with non-breaking&nbsp;spaces&nbsp;to&nbsp;prevent&nbsp;wrapping.</p>
+    <pre>
+        This is a multi-line poem
+        With spaces and line breaks
+        Preserved using the &lt;pre&gt; tag.
+    </pre>
+    <p>First paragraph.</p>
+    <hr>
+    <p>Second paragraph with a styled horizontal line.</p>
+    
+    <h1>Task 3: Meta Tags for SEO Optimization</h1>
+    <p>This page includes meta tags for character set, author, refresh interval, and SEO description.</p>
+    
+    <h1>Task 4: Conditional Comments for Browser Compatibility</h1>
+    <!--[if lt IE 9]>
+        <p>This is a fallback for older versions of Internet Explorer.</p>
+    <![endif]-->
+    <section>
+        <article>
+            <h2>HTML5 Section</h2>
+            <p>This is an article within a section, using HTML5 elements.</p>
+        </article>
+    </section>
+    
+    <h1>Task 5: Heading Tags and Text Formatting</h1>
+    <h1>This is a <b>bold</b> and <i>italicized</i> heading.</h1>
+    <h2>This is a subheading with <u>underlined</u> and <small>small</small> text.</h2>
+    <p>This paragraph contains superscript (<sup>superscript</sup>) and subscript (<sub>subscript</sub>) text.</p>
+    <p>Polynomial: 3x<sup>7</sup> + 11x<sup>5</sup> + 2x<sup>4</sup> - 5x<sup>-2a</sup> - 23x<sup>a-3b</sup></p>
+    
+    <h1>Task 6: Using the <code> and <var> Tags</h1>
+    <pre class="code-block"><code>
+        function greet() {
+            console.log("Hello, World!");
+        }
+    </code></pre>
+    <p>In programming, a <var>variable</var> is used to store data.</p>
+    
+    <h1>Task 7: Inline and Block-level Elements</h1>
+    <div>
+        This is a block-level <div> element containing inline elements like <span>span</span>, <a href="#">link</a>, and <strong>strong text</strong>.
+    </div>
+    <p>
+        This paragraph contains both inline (<a href="#">link</a>, <span>span</span>) and block-level elements (<div>div</div>, <p>paragraph</p>).
+    </p>
+    
+    <h1>Task 8: Direction and Quoting Elements</h1>
+    <p><q>This is a short quote.</q></p>
+    <blockquote>
+        This is a longer quote that spans multiple lines. It is enclosed in a blockquote tag with custom CSS styling.
+    </blockquote>
+    
+    <h1>Task 9: Creating Accessible Content with Meta Tags</h1>
+    <p>This page includes meta tags for viewport configuration, page refresh, and social media description.</p>
+    
+    <h1>Task 10: Custom Attributes and Grouping Content</h1>
+    <div data-custom="12345">
+        <p id="dynamic-content">This content will change based on the custom attribute.</p>
+    </div>
+    <section>
+        <article>
+            <h2>Article 1</h2>
+            <p>This is the first article under a common theme.</p>
+        </article>
+        <article>
+            <h2>Article 2</h2>
+            <p>This is the second article under the same theme.</p>
+        </article>
+    </section>
+    
+    <h1>Task 11: Responsive Layout with Grouped Content</h1>
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <footer>
+        <div>
+            <p>Footer content paragraph 1.</p>
+            <p>Footer content paragraph 2.</p>
+        </div>
+    </footer>
+    
+    <script>
+        const divElement = document.querySelector('div[data-custom]');
+        const dynamicContent = document.getElementById('dynamic-content');
+        dynamicContent.textContent = `Custom attribute value: ${divElement.getAttribute('data-custom')}`;
+    </script>
+</body>
+</html>
